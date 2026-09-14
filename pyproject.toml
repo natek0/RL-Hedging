@@ -1,0 +1,25 @@
+[project]
+name = "hedgerl"
+version = "0.1.0"
+description = "Reinforcement learning for delta and delta-gamma hedging of a short index option book under transaction costs, benchmarked against Whalley-Wilmott and Leland."
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "pandas>=2.0",
+    "torch>=2.1",
+    "pfhedge>=0.23",
+    "gymnasium>=0.29",
+    "stable-baselines3>=2.2",
+    "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["hedgerl*"]
