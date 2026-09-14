@@ -1,7 +1,7 @@
 # hedgerl: RL and classical hedging of a short index option book under transaction costs
 
 A dealer is structurally short options from customer flow and has to hedge them under transaction
-costs. This repo asks a narrow question with careful controls: **does a learned hedging policy beat
+costs. This repo asks: **does a learned hedging policy beat
 the cost-aware practitioner baselines (Whalley-Wilmott bands, Leland's adjusted delta), on the same
 paths, and does the edge survive when the market does not follow the model it was trained on?**
 
