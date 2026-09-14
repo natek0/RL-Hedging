@@ -5,3 +5,4 @@ logs/
 results/**/*.npz
 .venv/
 .DS_Store
+Claude outputs/
